@@ -1,0 +1,24 @@
+input[type="checkbox"] {
+  appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.dark-light::before{
+    content: '';
+    position: absolute;
+    top: 2.7px;
+    left: 2.5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+}
+
+input[type="checkbox"]:checked ~ .dark-light::before {  
+    left: 30px;
+}
+
+.pointer {
+  clip-path: polygon(25% 0, 50% 50%, 0 50%);
+  
+}
